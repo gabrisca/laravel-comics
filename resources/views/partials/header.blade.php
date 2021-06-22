@@ -55,7 +55,7 @@
             </li>
             <li>
                 {{-- legge il name della rotta --}}
-                <a class="{{ request()->is('shop') ? 'active' : '' }}" href="{{ route('shop') }}">Characters</a>
+                <a class="{{ request()->is('shop') ? 'active' : '' }}" href="{{ route('shop') }}">Shop</a>
                 {{-- operatore ternario: se la richiesta è uguale alla rotta (non al name!) aggiungi la classe active, altrimenti nulla --}}
             </li>
             <li class="search">
