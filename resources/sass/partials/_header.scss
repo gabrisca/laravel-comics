@@ -1,0 +1,59 @@
+header {
+    height: 100px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    #logo {
+        margin: 10px 0;
+        height: 80px;
+        a {
+            img {
+                height: 100%;
+            }
+        }
+    }
+    #menu {
+        ul {
+            display: flex;
+            @include center();
+            li {
+                margin-left: 25px;
+                height: 100px;
+                line-height: 100px;
+                cursor: pointer;
+                &:hover a {
+                    color: $brand-color;
+                }
+                a {
+                    color: #484d52;
+                    height: 100px;
+                    text-transform: uppercase;
+                    padding-bottom: 36px;
+                    &.active {
+                        border-bottom: 4px solid $brand-color;
+                        a {
+                            color: $brand-color;
+                        }
+                    }
+                }
+                &.search {
+                    border-bottom: 4px solid $brand-color;
+                    height: 25px;
+                    display: flex;
+                    @include center();
+                    input {
+                        border: transparent;
+                        text-align: right;
+                        outline: none;
+                    }
+                    i {
+                        color: #484d52;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

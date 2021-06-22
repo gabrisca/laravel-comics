@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #232322;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin: 40px 0;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main #jumbotron {
+  background-image: url(../img/jumbotron.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+main #cards {
+  position: relative;
+  padding: 40px 128px;
+}
+main #cards .btn {
+  position: absolute;
+  top: -23px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: #0C82F9;
+  border: 1px solid #0C82F9;
+  font-size: 1.2em;
+  z-index: 1;
+}
+main #cards .main-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main #cards .main-wrapper .card {
+  flex-basis: calc(100% / 6);
+}
+main #cards .btn-load {
+  width: 250px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #0C82F9;
+  border: 1px solid #0C82F9;
+  cursor: pointer;
+}
+main #cards .btn-load:hover {
+  filter: brightness(1.2);
+}
+main #cards .btn-load a {
+  color: white;
+}
+
+header {
+  height: 100px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 150px;
+}
+header #logo {
+  margin: 10px 0;
+  height: 80px;
+}
+header #logo a img {
+  height: 100%;
+}
+header #menu ul {
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #menu ul li {
+  margin-left: 25px;
+  height: 100px;
+  line-height: 100px;
+  cursor: pointer;
+}
+header #menu ul li:hover a {
+  color: #0C82F9;
+}
+header #menu ul li a {
+  color: #484d52;
+  height: 100px;
+  text-transform: uppercase;
+  padding-bottom: 36px;
+}
+header #menu ul li a.active {
+  border-bottom: 4px solid #0C82F9;
+}
+header #menu ul li a.active a {
+  color: #0C82F9;
+}
+header #menu ul li.search {
+  border-bottom: 4px solid #0C82F9;
+  height: 25px;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #menu ul li.search input {
+  border: transparent;
+  text-align: right;
+  outline: none;
+}
+header #menu ul li.search i {
+  color: #484d52;
+  margin-left: 5px;
+}
+
+footer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/footer-bg.jpg);
+}
+footer .footer-top .footer-top-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  background-image: url(../assets/img/dc-logo-bg.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  background-size: 32em;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-bottom: 40px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+footer .footer-top .footer-top-wrapper ul {
+  flex-basis: 180px;
+  margin-right: 20px;
+}
+footer .footer-top .footer-top-wrapper ul h3 {
+  margin: 10px 0;
+  color: white;
+}
+footer .footer-top .footer-top-wrapper ul li {
+  margin-bottom: 4px;
+}
+footer .footer-top .footer-top-wrapper ul li a {
+  color: #6c7b7c;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+footer .footer-top .footer-top-wrapper ul li a:hover {
+  color: white;
+}
+footer .footer-bottom {
+  height: 100px;
+  background-color: #303030;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+footer .footer-bottom .btn {
+  border: 2px solid #0C82F9;
+  padding: 10px;
+  cursor: pointer;
+}
+footer .footer-bottom .btn:hover {
+  background-color: #8b7f7f17;
+}
+footer .footer-bottom .btn a {
+  color: white;
+}
+footer .footer-bottom ul {
+  display: flex;
+  align-items: center;
+}
+footer .footer-bottom ul li {
+  margin-left: 20px;
+}
+footer .footer-bottom ul li:first-child {
+  font-size: 1.2em;
+}
+footer .footer-bottom ul li a {
+  height: 100%;
+}
+footer .footer-bottom ul li a:first-child {
+  color: #0C82F9;
+}
+footer .footer-bottom ul li a img:hover {
+  filter: brightness(1.8);
+}
