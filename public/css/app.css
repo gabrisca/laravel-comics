@@ -49,6 +49,19 @@ main #cards .main-wrapper {
 }
 main #cards .main-wrapper .card {
   flex-basis: calc(100% / 6);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+main #cards .main-wrapper .card:hover {
+  filter: brightness(1.2);
+}
+main #cards .main-wrapper .card img {
+  margin-bottom: 10px;
+}
+main #cards .main-wrapper .card span {
+  display: block;
+  color: white;
+  text-transform: uppercase;
 }
 main #cards .btn-load {
   width: 250px;

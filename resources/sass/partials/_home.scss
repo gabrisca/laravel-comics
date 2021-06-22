@@ -25,7 +25,20 @@ main #cards {
         flex-wrap: wrap;
         .card {
             flex-basis: calc(100% / 6);
-        }
+            margin-bottom: 20px;
+            cursor: pointer;
+            &:hover {
+              filter: brightness(1.2);
+            }
+            img {
+              margin-bottom: 10px;
+            }
+            span {
+              display: block;
+              color: white;
+              text-transform: uppercase;
+            }
+          }
     }
     .btn-load {
         width: 250px;

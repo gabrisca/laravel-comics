@@ -13,6 +13,7 @@
                 @foreach ($products as $product)
                     <div class="card">
                         <img src="{{ $product['thumb'] }}" alt="{{ $product['title'] }}">
+                        <span>{{$product['series']}}</span>
                     </div>
                 @endforeach
             </div>
