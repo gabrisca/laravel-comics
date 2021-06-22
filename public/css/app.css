@@ -62,6 +62,7 @@ main #cards .main-wrapper .card span {
   display: block;
   color: white;
   text-transform: uppercase;
+  width: 80%;
 }
 main #cards .btn-load {
   width: 250px;
